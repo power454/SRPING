@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="LibraryPU" transaction-type="RESOURCE_LOCAL">
+        <class>pl.edu.wit.model.Author</class>
+        <class>pl.edu.wit.model.Book</class>
+        <class>pl.edu.wit.model.Publisher</class>
+        <class>pl.edu.wit.model.Category</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:~/pja-test;AUTO_SERVER=TRUE"/> <!-- baza danych statyczna nie w pamieći dostępna w katalogu domowym uzytkownika -->
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+            <property name="hibernate.show_sql" value="true"/> <!-- wypisuje wszystkie zapytania uzyte za po moca hibernate -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/> <!-- update - zeby zachować dane pomiedzy uruchomieniem aplikacji / create - zeby te dane były zawsze czyszczone. -->
+        </properties>
+    </persistence-unit>
+</persistence>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<books>
+    <book id="1">
+        <title>Alicja w krainie czarów</title>
+        <author id="1">
+            <name>Lewis</name>
+            <lastName>Carroll</lastName>
+        </author>
+        <isbn>978832814806</isbn>
+        <price>16.99</price>
+        <pages>22</pages>
+        <publisher id="1">
+            <name>Egmont Polska Sp. z o.o.</name>
+        </publisher>
+        <description>ilustorowana bajka dla dzieci</description>
+        <category id="1">bajka</category>
+    </book>
+    <book id="2">
+        <title>Alicja w krainie czarów - po drugiej stronie lustra</title>
+        <author id="1">
+            <name>Lewis</name>
+            <lastName>Carroll</lastName>
+        </author>
+        <author id="2">
+            <name>Author</name>
+            <lastName>Testowy</lastName>
+        </author>
+        <isbn>9782123456803</isbn>
+        <price>16.99</price>
+        <pages>30</pages>
+        <publisher id="1">
+            <name>Egmont Polska Sp. z o.o.</name>
+        </publisher>
+        <description>ilustorowana bajka dla dzieci</description>
+        <category id="1">bajka</category>
+    </book>
+</books>
